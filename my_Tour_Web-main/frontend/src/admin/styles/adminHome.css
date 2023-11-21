@@ -1,0 +1,81 @@
+.booking_admin {
+  display: flex;
+  justify-content: center;
+}
+
+.booking__form_admin {
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.booking__form_admin h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.booking__info-form_admin {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(3, auto); /* 3 rows */
+  gap: 20px;
+}
+
+.booking__info-form_admin label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.booking__info-form_admin input[type="text"],
+.booking__info-form_admin input[type="number"],
+.booking__info-form_admin textarea {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #f5f5f5;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#createBtn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-left: 0 auto;
+}
+
+.booking__info-form_admin input[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+@media screen and (max-width: 768px) {
+  .booking__form_admin {
+    padding: 20px;
+  }
+  
+  .booking__form_admin h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .booking__info-form_admin {
+    grid-template-columns: 1fr; /* 1 column */
+    grid-template-rows: repeat(6, auto); /* 6 rows */
+  }
+}

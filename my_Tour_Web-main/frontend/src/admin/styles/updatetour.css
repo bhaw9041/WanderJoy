@@ -1,0 +1,72 @@
+
+.tour__content_myadmin {
+    padding: 50px;
+  }
+  
+  .booking__info-form_myadmin {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .booking__info-form_myadmin input[type="text"], .booking__info-form_myadmin input[type="number"], .booking__info-form_myadmin input[type="boolean"], .booking__info-form_myadmin textarea {
+    background-color: #f6f6f6;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    color: #333;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .booking__info-form_myadmin input[disabled], .booking__info-form_myadmin textarea[disabled] {
+    background-color: #ebebeb;
+    color: #888;
+  }
+  
+  .booking__info-form_myadmin input[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .booking__info-form_myadmin input[type="submit"]:hover {
+    background-color: #0062cc;
+  }
+  
+  .form-group span {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 767px) {
+    .booking__info-form_myadmin {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .booking__info-form_myadmin input[type="text"],.booking__info-form_myadmin input[type="number"],.booking__info-form_myadmin input[type="boolean"],.booking__info-form_myadmin textarea {
+      font-size: 14px;
+    }
+  
+    .booking__info-form_myadmin input[type="submit"] {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
