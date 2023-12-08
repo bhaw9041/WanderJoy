@@ -1,4 +1,4 @@
-/* .booking_admin {
+.booking_admin {
   display: flex;
   justify-content: center;
 }
@@ -12,9 +12,9 @@
   background-color: #fff;
   margin-top: 30px;
   margin-bottom: 50px;
-} */
+}
 
-/* .booking__form_admin h2 {
+.booking__form_admin h2 {
   font-size: 28px;
   font-weight: 700;
   text-align: center;
@@ -31,7 +31,7 @@
 .booking__info-form_admin label {
   font-size: 18px;
   font-weight: 500;
-} */
+}
 
 .booking__info-form_admin input[type="text"],
 .booking__info-form_admin input[type="number"],
