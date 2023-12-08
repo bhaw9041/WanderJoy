@@ -17,7 +17,7 @@ import Newsletter from '../shared/Newsletter'
 
 const Home = () => {
     return <>
-    {/*---Hero Section----*/}
+    {/*---Hero Section with all the details of Travel----*/}
     <section>
         <Container>
             <Row>
