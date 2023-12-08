@@ -1,7 +1,6 @@
 import User from '../models/User.js'
 
 
-
 //create new User
 export const createUser = async (req, res) => {
     const newUser = new User(req.body);

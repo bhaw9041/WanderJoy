@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+// creating a model for booking
 const bookingSchema = new mongoose.Schema(
   {
     userId: {
