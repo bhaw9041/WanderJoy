@@ -29,7 +29,7 @@ const quick__links2=[
         display: 'Register'
     }
 ]
-
+// footer component
 const Footer = () => {
     const year = new Date().getFullYear() 
     return <footer className='footer'>

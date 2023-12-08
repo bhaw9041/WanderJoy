@@ -5,6 +5,7 @@ import {Col} from 'reactstrap'
 import useFetch from '../../hooks/useFetch';
 import { BASE_URL } from '../../utils/config';
 
+// creating featured tour list
 const FeaturedTourList = () => {
 
     const {data: featuredTours, loading, error} = useFetch(

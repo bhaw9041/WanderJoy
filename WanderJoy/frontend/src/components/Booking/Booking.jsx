@@ -7,6 +7,7 @@ import { BASE_URL } from '../../utils/config'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+// creating a tour booking
 const Booking = ({tour, avgRating}) => {
 
     const{price, reviews, title} = tour;
