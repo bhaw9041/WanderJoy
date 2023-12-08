@@ -41,6 +41,7 @@ const Login = () => {
       const result = await res.json();
 
       if (res.status === 404) {
+        console.log(result);
         // Display a toast notification saying "user not found"
         toast.error('User not found');
       } else if (!res.ok) {
@@ -54,6 +55,7 @@ const Login = () => {
           role: result.role 
         } 
          });
+         console.log(result);
         //console.log(result);
         toast.success(result.message);
         navigate('/');
@@ -88,7 +90,7 @@ const Login = () => {
                             </FormGroup>
                             <Button className='btn secondary__btn auth__btn' type='submit'>Login</Button>
                         </Form>
-                        <p>Don't have an account? <Link to='/register'>Create</Link></p>
+                        <p>Don't have an account ? <Link to='/register'>Create</Link></p>
                     </div>
                     </div>
                 </Col>
