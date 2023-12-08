@@ -1,9 +1,8 @@
-
-
 import React from 'react' 
 import Masonry, {ResponsiveMasonry} from 'react-responsive-masonry'
 import galleryImages from './galleryImages'
 
+// image gallery
 const MasonryImagesGallery = () => {
     return(
        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 768: 3, 992: 4 }}>

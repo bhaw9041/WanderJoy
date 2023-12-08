@@ -8,7 +8,7 @@ import ava05 from '../../assets/images/ava-5.jpg'
 import ava06 from '../../assets/images/ava-6.jpg'
 
 
-
+// creating testimonials
 const Testimonials = () => {
 
     const settings = {

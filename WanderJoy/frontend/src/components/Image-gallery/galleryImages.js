@@ -8,6 +8,7 @@ import galleryImg05 from '../../assets/images/gallery-05.jpg'
 import galleryImg06 from '../../assets/images/gallery-06.jpg'
 import galleryImg07 from '../../assets/images/gallery-07.jpg'
 
+// creating image gallery
 const galleryImages = [
     galleryImg01,
     galleryImg07,
