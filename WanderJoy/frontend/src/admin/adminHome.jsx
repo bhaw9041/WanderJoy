@@ -9,8 +9,7 @@ import SearchBar from '../shared/SearchBar'
 import Tours from '../pages/Tours'
 
 
-
-
+// creating admin home page
 const AdminHome = () => {
 
     const { user } = useContext(AuthContext);
