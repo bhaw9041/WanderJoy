@@ -7,6 +7,7 @@ import calculateAvgRating from '../utils/avgRating'
 import {BASE_URL} from './../utils/config'
 import {AuthContext} from './../context/AuthContext'
 
+// creating admin tour
 const AdminTourCard = ({tour}) => {
 
     const{_id,title,city, photo,price,featured,reviews} = tour;
@@ -72,7 +73,7 @@ const AdminTourCard = ({tour}) => {
                 <button className='btn booking__btn_ouradmin'>
                     <Link to={`/tours/update/${_id}`}>Update Tour</Link>
                 </button> 
-                {/*--added delete button--*/}
+                {/*--adding delete button--*/}
                 <button className='btn delete__btn_ouradmin' onClick={handleDelete}>
                     Delete Tour
                 </button>

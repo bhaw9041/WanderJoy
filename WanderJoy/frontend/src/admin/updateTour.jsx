@@ -9,6 +9,7 @@ import useFetch from './../hooks/useFetch'
 import {BASE_URL} from './../utils/config'
 import {AuthContext} from './../context/AuthContext'
 
+// updating tour database
 const UpdateTour = () => {
 
     const { id } = useParams();
