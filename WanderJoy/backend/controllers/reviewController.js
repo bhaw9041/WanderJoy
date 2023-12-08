@@ -2,7 +2,7 @@ import Tour from "../models/Tour.js"
 import Review from "../models/Review.js"
 
 export const createReview = async(req,res)=>{
-
+console.log(req.body);
     const tourId = req.params.tourId
     const newReview = new Review({...req.body})
 
@@ -18,6 +18,7 @@ export const createReview = async(req,res)=>{
         res.status(200).json({success:true, message:'Review Submitted', data:savedReview});
 
     }catch(err){
+        console.log(err);
         res.status(500).json({success:false, message:'Failed to Submit',});
     }
 }
