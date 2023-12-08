@@ -99,7 +99,7 @@ const About = () => {
           </ul>
           <p>
             By monitoring these metrics, we can identify areas for improvement and make data-driven decisions to
-            enhance our services and provide even better travel experiences for our customers.
+            enhance our services and provide better travel experiences for our customers.
           </p>
           <Button className="btn primary__btn w-25">
             <Link to="/home">Back to Home</Link>
