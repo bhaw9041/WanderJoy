@@ -13,27 +13,27 @@ import Tours from '../pages/Tours'
 
 const AdminHome = () => {
 
-    // const { user } = useContext(AuthContext);
-    // const token = user.token;
+    const { user } = useContext(AuthContext);
+    const token = user.token;
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
-    //const {user} = useContext(AuthContext)
+    const { user } = useContext(AuthContext)
 
-    // const [creatingTour, setCreatingTour] = useState(
-    //     {
-    //         title: '',
-    //         city: '',
-    //         address: '',
-    //         distance: '',
-    //         price: '',
-    //         maxGroupSize: 1,
-    //         desc: '',
-    //         reviews: [],
-    //         photo: '/tour-images/tour-img03.jpg',
-    //         featured: ''
-    //     }
-    // )
+    const [creatingTour, setCreatingTour] = useState(
+        {
+            title: '',
+            city: '',
+            address: '',
+            distance: '',
+            price: '',
+            maxGroupSize: 1,
+            desc: '',
+            reviews: [],
+            photo: '/tour-images/tour-img03.jpg',
+            featured: ''
+        }
+    )
 
     const handleChange = e => {
         setCreatingTour(prev => ({ ...prev, [e.target.id]: e.target.value }))
