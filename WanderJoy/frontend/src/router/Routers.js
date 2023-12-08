@@ -10,7 +10,6 @@ import SearchResultList from './../pages/SearchResultList'
 import ThankYou from '../pages/ThankYou'
 import Payment from '../pages/Payment'
 import About from '../pages/About'
-
 import AdminHome from './../admin/adminHome'
 import AllTours from './../admin/allTours'
 import UpdateTour from './../admin/updateTour'
