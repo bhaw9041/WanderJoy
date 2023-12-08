@@ -1,14 +1,10 @@
 import Tour from '../models/Tour.js'
 
-
-
 //create new tour
 export const createTour = async (req, res) => {
     const newTour = new Tour(req.body);
-
     try{
         const savedTour = await newTour.save();
-
         res
         .status(200)
         .json({
@@ -29,14 +25,11 @@ export const createTour = async (req, res) => {
 
 //update tour
 export const updateTour = async(req,res)=>{
-
     const id = req.params.id;
-
     try{
         const updatedTour = await Tour.findByIdAndUpdate(id, {
             $set: req.body
         }, {new:true});
-
         res
         .status(200)
         .json({
@@ -57,10 +50,8 @@ export const updateTour = async(req,res)=>{
 //delete tour
 export const deleteTour = async(req,res)=>{
     const id = req.params.id;
-
     try{
         const deletedTour = await Tour.findByIdAndDelete(id);
-
         res
         .status(200)
         .json({
@@ -81,10 +72,8 @@ export const deleteTour = async(req,res)=>{
 //getSingle tour
 export const getSingleTour = async(req,res)=>{
     const id = req.params.id;
-
     try{
         const tour = await Tour.findById(id).populate('reviews');
-
         res
         .status(200)
         .json({
@@ -106,13 +95,11 @@ export const getSingleTour = async(req,res)=>{
 export const getAllTour = async(req,res)=>{
     //pagination
     const page = parseInt(req.query.page);
-
     try{
         const tours = await Tour.find({})
         .populate('reviews')
         .skip(page * 8)
         .limit(8);
-
         res
         .status(200)
         .json({
@@ -136,7 +123,6 @@ export const getTourBySearch = async(req,res)=>{
     const city = new RegExp(req.query.city, "i"); // i means case sensitive
     const distance = parseInt(req.query.distance);
     const maxGroupSize = parseInt(req.query.maxGroupSize);
-
     try{
         //gte means greater than equal
         const tours = await Tour.find({ 
@@ -144,7 +130,6 @@ export const getTourBySearch = async(req,res)=>{
             distance: { $gte: distance },
         maxGroupSize: { $gte: maxGroupSize },
     }).populate('reviews');
-
         res
         .status(200)
         .json({
@@ -152,7 +137,6 @@ export const getTourBySearch = async(req,res)=>{
             message: "Successful",
             data: tours,
         });
-
     } catch (err) {
         console.error(err);
         res
@@ -161,17 +145,13 @@ export const getTourBySearch = async(req,res)=>{
             success: false,
             message: "Not found"
         });
-
     }
-
 }
 
 //get featured tour
 export const getFeaturedTour = async(req,res)=>{
-    
     try{
         const tours = await Tour.find({featured:true}).populate('reviews').limit(8);
-
         res
         .status(200)
         .json({
@@ -193,7 +173,6 @@ export const getFeaturedTour = async(req,res)=>{
 export const getTourCount = async(req,res) =>{
     try{
         const tourCount = await Tour.estimatedDocumentCount();
-
         res
         .status(200)
         .json({ success: true,
