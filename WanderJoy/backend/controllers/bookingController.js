@@ -22,6 +22,7 @@ export const getBooking = async(req,res) =>{
         res.status(200).json({success:true, message:'Succesfull', data:book})
 
     } catch (err) {
+		console.log(err);
         res.status(404).json({success:true, message:'not found'})
     }
 }
