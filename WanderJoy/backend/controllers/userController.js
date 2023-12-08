@@ -2,7 +2,7 @@ import User from '../models/User.js'
 
 
 
-//create new User
+//API to create new User
 export const createUser = async (req, res) => {
     const newUser = new User(req.body);
 
@@ -17,7 +17,8 @@ export const createUser = async (req, res) => {
             data: savedUser,
         });
     } catch (err) {
-        res
+        console.log(err);
+		res
         .status(500)
         .json({
             success: false,

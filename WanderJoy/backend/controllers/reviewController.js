@@ -5,7 +5,7 @@ export const createReview = async(req,res)=>{
 console.log(req.body);
     const tourId = req.params.tourId
     const newReview = new Review({...req.body})
-
+console.log(tourId);
     try{
 
         const savedReview = await newReview.save()
